@@ -1,4 +1,4 @@
-# automacao-python
+# [Selenium-Py] Primeira Compra
 O script python existente nesse repositório, foi desenvolvido para um Caso de Uso da empresa Shopper.com.br
 
 O cenário tratado é o seguinte:
