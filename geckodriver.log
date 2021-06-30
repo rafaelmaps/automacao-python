@@ -5102,3 +5102,82 @@ JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't fin
 JavaScript error: , line 0: SyntaxError: JSON.parse: unexpected end of data at line 1 column 1 of the JSON data
 JavaScript error: , line 0: SyntaxError: JSON.parse: unexpected end of data at line 1 column 1 of the JSON data
 JavaScript error: , line 0: SyntaxError: JSON.parse: unexpected end of data at line 1 column 1 of the JSON data
+console.error: services.settings: 
+  Message: TypeError: NetworkError when attempting to fetch resource.
+1625011586357	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
+JavaScript warning: https://vlibras.gov.br/app2/vlibras-plugin.js, line 81: unreachable code after return statement
+JavaScript error: https://sso.acesso.gov.br/assets/vendors/qrcode/qrcode.min.js, line 1: TypeError: a is null
+console.error: "Tried to send a 'target-destroyed-form' event on an already destroyed actor 'watcher'"
+1625012038075	Marionette	INFO	Stopped listening on port 49252
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1625020089307	geckodriver	INFO	Listening on 127.0.0.1:59378
+1625020092380	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\COMPUT~1\\AppData\\Local\\Temp\\rust_mozprofilewUHiG9"
+1625020092755	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Computador\\AppData\\Local\\Temp\\rust_mozprofilewUHiG9\\search.json.mozlz4", (void 0)))
+1625020095134	Marionette	INFO	Listening on port 59386
+1625020095575	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://tm.jsuol.com.br/uoltm.js?id=azcgaj, line 1: unreachable code after return statement
+JavaScript warning: https://tm.jsuol.com.br/uoltm.js?id=azcgaj, line 1: unreachable code after return statement
+1625020101316	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'loading'.
+JavaScript error: https://static.zdassets.com/web_widget/latest/chat-sdk.4d5342e79470c580a0dc.chunk.js, line 85: TypeError: this.$Loader is undefined
+JavaScript warning: https://tm.jsuol.com.br/uoltm.js?id=azcgaj, line 1: unreachable code after return statement
+JavaScript warning: https://tm.jsuol.com.br/uoltm.js?id=azcgaj, line 1: unreachable code after return statement
+JavaScript warning: https://tm.jsuol.com.br/uoltm.js?id=azcgaj, line 1: unreachable code after return statement
+JavaScript warning: https://tm.jsuol.com.br/uoltm.js?id=azcgaj, line 1: unreachable code after return statement
+JavaScript error: , line 0: SyntaxError: JSON.parse: unexpected end of data at line 1 column 1 of the JSON data
+JavaScript error: https://programada.shopper.com.br/static/CACHE/js/6fd64c8fc8b3.js, line 1: Error: Request aborted
+JavaScript error: https://programada.shopper.com.br/static/CACHE/js/6fd64c8fc8b3.js, line 1: Error: Request aborted
+JavaScript error: https://programada.shopper.com.br/static/CACHE/js/6fd64c8fc8b3.js, line 1: Error: Request aborted
+JavaScript error: https://programada.shopper.com.br/static/CACHE/js/6fd64c8fc8b3.js, line 1: Error: Request aborted
+JavaScript error: https://programada.shopper.com.br/static/CACHE/js/6fd64c8fc8b3.js, line 1: Error: Request aborted
+JavaScript error: https://programada.shopper.com.br/static/CACHE/js/6fd64c8fc8b3.js, line 1: Error: Request aborted
+JavaScript warning: https://tm.jsuol.com.br/uoltm.js?id=azcgaj, line 1: unreachable code after return statement
+JavaScript warning: https://tm.jsuol.com.br/uoltm.js?id=azcgaj, line 1: unreachable code after return statement
+JavaScript error: , line 0: SyntaxError: JSON.parse: unexpected end of data at line 1 column 1 of the JSON data
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: , line 0: SyntaxError: JSON.parse: unexpected end of data at line 1 column 1 of the JSON data
+JavaScript error: , line 0: SyntaxError: JSON.parse: unexpected end of data at line 1 column 1 of the JSON data
+JavaScript error: , line 0: SyntaxError: JSON.parse: unexpected end of data at line 1 column 1 of the JSON data
+JavaScript error: , line 0: SyntaxError: JSON.parse: unexpected end of data at line 1 column 1 of the JSON data
+JavaScript error: https://static.zdassets.com/web_widget/latest/preload.a54b965ad9b2919123bb.js, line 1: NS_ERROR_NOT_INITIALIZED: 
+1625020262097	Marionette	INFO	Stopped listening on port 59386
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1625020265769	geckodriver	INFO	Listening on 127.0.0.1:59613
+1625020268876	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\COMPUT~1\\AppData\\Local\\Temp\\rust_mozprofilerHqWsT"
+1625020269249	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Computador\\AppData\\Local\\Temp\\rust_mozprofilerHqWsT\\search.json.mozlz4", (void 0)))
+1625020271938	Marionette	INFO	Listening on port 59621
+1625020272114	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://tm.jsuol.com.br/uoltm.js?id=azcgaj, line 1: unreachable code after return statement
+JavaScript warning: https://tm.jsuol.com.br/uoltm.js?id=azcgaj, line 1: unreachable code after return statement
+1625020276009	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'loading'.
+JavaScript warning: https://tm.jsuol.com.br/uoltm.js?id=azcgaj, line 1: unreachable code after return statement
+JavaScript warning: https://tm.jsuol.com.br/uoltm.js?id=azcgaj, line 1: unreachable code after return statement
+1625020279449	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'loading'.
+JavaScript warning: https://tm.jsuol.com.br/uoltm.js?id=azcgaj, line 1: unreachable code after return statement
+JavaScript warning: https://tm.jsuol.com.br/uoltm.js?id=azcgaj, line 1: unreachable code after return statement
+JavaScript error: , line 0: SyntaxError: JSON.parse: unexpected end of data at line 1 column 1 of the JSON data
+JavaScript error: https://programada.shopper.com.br/static/CACHE/js/6fd64c8fc8b3.js, line 1: Error: Request aborted
+JavaScript error: https://programada.shopper.com.br/static/CACHE/js/6fd64c8fc8b3.js, line 1: Error: Request aborted
+JavaScript error: https://programada.shopper.com.br/static/CACHE/js/6fd64c8fc8b3.js, line 1: Error: Request aborted
+JavaScript error: https://programada.shopper.com.br/static/CACHE/js/6fd64c8fc8b3.js, line 1: Error: Request aborted
+JavaScript error: https://programada.shopper.com.br/static/CACHE/js/6fd64c8fc8b3.js, line 1: Error: Request aborted
+JavaScript error: https://programada.shopper.com.br/static/CACHE/js/6fd64c8fc8b3.js, line 1: Error: Request aborted
+JavaScript warning: https://tm.jsuol.com.br/uoltm.js?id=azcgaj, line 1: unreachable code after return statement
+JavaScript warning: https://tm.jsuol.com.br/uoltm.js?id=azcgaj, line 1: unreachable code after return statement
+JavaScript error: , line 0: SyntaxError: JSON.parse: unexpected end of data at line 1 column 1 of the JSON data
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: , line 0: SyntaxError: JSON.parse: unexpected end of data at line 1 column 1 of the JSON data
+JavaScript error: , line 0: SyntaxError: JSON.parse: unexpected end of data at line 1 column 1 of the JSON data
+JavaScript error: , line 0: SyntaxError: JSON.parse: unexpected end of data at line 1 column 1 of the JSON data
+JavaScript error: , line 0: SyntaxError: JSON.parse: unexpected end of data at line 1 column 1 of the JSON data
+1625020331690	Marionette	INFO	Stopped listening on port 59621
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+

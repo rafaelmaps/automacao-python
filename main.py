@@ -2,12 +2,23 @@
 Premissa: baixar o geckodriver em: https://github.com/mozilla/geckodriver/releases e apontar
 o diretorio do driver na variavel 'path' do windows.
 """
+import json
 import time
 
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
+
+from pathlib import Path
+import configparser
+
+
+def recuperar_credenciais():
+    credenciais_dir = str(Path.home()) + '\shopper_acesso.txt'
+    config = configparser.RawConfigParser()
+    config.read(credenciais_dir)
+    return dict(config.items('CREDENCIAIS'))
 
 
 def acessar_site_shopper():
@@ -97,11 +108,18 @@ def realizar_pagamento(browser, nome_cartao, nro_cartao, dt_venc, cvv, cpf):
     browser.find_element(By.CSS_SELECTOR, 'button.sc-gefPzt.gTuttx').click()
 
 
+def recuperar_massa_dados():
+    return json.load(open('massa_dados'))
+
+
 if __name__ == "__main__":
+    credenciais = recuperar_credenciais()
+    dados = recuperar_massa_dados()
+
     shopper = acessar_site_shopper()
-    realizar_login(shopper, 'doidocriolo@yahoo.com.br', 'jhow123shopper')
-    pesquisar_produto(shopper, 'corona')
+    realizar_login(shopper, credenciais['email'], credenciais['senha'])
+    pesquisar_produto(shopper, dados['produto'])
     finalizar_compra(shopper)
-    agendar_entrega(shopper, '132', '26061992', 'M')
-    realizar_pagamento(shopper, 'TESTE - CARTAO FAKE', '5543455559071146',
-                       '1022', '551', '86111811827')
+    agendar_entrega(shopper, dados['end_numero'], dados['data_nasc'], dados['sexo'])
+    realizar_pagamento(shopper, dados['nome_cartao'], dados['nro_cartao'],
+                       dados['venc_cartao'], dados['cvv_cartao'], dados['cpf_cnpj'])
