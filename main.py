@@ -123,3 +123,7 @@ if __name__ == "__main__":
     agendar_entrega(shopper, dados['end_numero'], dados['data_nasc'], dados['sexo'])
     realizar_pagamento(shopper, dados['nome_cartao'], dados['nro_cartao'],
                        dados['venc_cartao'], dados['cvv_cartao'], dados['cpf_cnpj'])
+
+    msg_cartao_invalido = WebDriverWait(shopper, 1).until(
+            EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div[6]/div/div[5]/p")))
+    assert msg_cartao_invalido is not None
