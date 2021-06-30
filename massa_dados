@@ -1,0 +1,11 @@
+{
+  "produto": "corona",
+  "end_numero": "132",
+  "data_nasc": "26061992",
+  "sexo": "M",
+  "nome_cartao": "TESTE - CARTAO FAKE",
+  "nro_cartao": "5543455559071146",
+  "venc_cartao": "1022",
+  "cvv_cartao": "551",
+  "cpf_cnpj": "86111811827"
+}
