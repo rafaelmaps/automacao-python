@@ -29,10 +29,7 @@ def acessar_site_shopper():
 
 
 def realizar_login(browser, login, senha):
-    elements = browser.find_elements_by_tag_name('button')
-    for e in elements:
-        if e.text == 'ENTRAR':
-            e.click()
+    browser.find_element_by_xpath('//a[@class="login"]').click()
 
     form = browser.find_element_by_tag_name('form')
     form.find_element_by_name('email').send_keys(login)
@@ -57,10 +54,10 @@ def pesquisar_produto(browser, nome_produto):
 
 
 def selecionar_qtd_maxima(browser):
-    produtos = browser.find_elements_by_xpath('//div[@class="sc-iQQLPo eVFQLq"]')
-    produtos[0].find_element_by_xpath('//div[@class="sc-fTFMiz PIJDq"]').click()
+    produtos = browser.find_elements_by_xpath('//div[@class="sc-dMackw jJjywH"]')
+    produtos[0].find_element_by_xpath('//div[@class="sc-bA-DTon IPtEP"]').click()
     time.sleep(1)
-    produtos[0].find_element_by_xpath('//button[@class="sc-bTJQgd crMrTS"]').click()
+    produtos[0].find_element_by_xpath('//button[@class="sc-ciOKUB itWoQV"]').click()
     qtd_max_produto = produtos[0].find_element_by_xpath(
         '//div[@class="quantity-actions"]').find_element_by_tag_name('input').get_attribute('max')
     produtos[0].find_element_by_xpath('//div[@class="quantity-actions"]').find_element_by_tag_name(
@@ -75,11 +72,11 @@ def recuperar_valor_carrinho(browser):
 
 def finalizar_compra(browser):
     time.sleep(3)
-    browser.find_element_by_xpath('//div[@class="sc-bgPuHN dFTeZX side-cart-toggle"]').find_element_by_tag_name('a').click()
+    browser.find_element_by_xpath('//div[@class="sc-vMGZd klHHrL side-cart-toggle"]').find_element_by_tag_name('a').click()
 
 
 def agendar_entrega(browser, numero_end, data_nasc, sexo):
-    browser.find_element_by_xpath('//div[@class="sc-jTFZWL ianKKN"]').click()
+    browser.find_element_by_xpath('//div[@class="sc-chBrpC iINMlQ"]').click()
     browser.find_element_by_xpath('//input[@name ="number"]').send_keys(numero_end)
     browser.find_element_by_xpath('//input[@name ="birthday"]').send_keys(data_nasc)
     if sexo == 'M':
@@ -89,10 +86,10 @@ def agendar_entrega(browser, numero_end, data_nasc, sexo):
 
 
 def realizar_pagamento(browser, nome_cartao, nro_cartao, dt_venc, cvv, cpf):
-    browser.find_element_by_xpath('//button[@class="sc-LEMQU dZvoYb sc-cMVuDo dnSSwM"]').click()
+    browser.find_element_by_xpath('//button[@class="sc-eEnULY bdDhsT"]').click()
 
     WebDriverWait(browser, 5).until(
-        EC.element_to_be_clickable((By.XPATH, '//div[@class="sc-kOSLtt kLGxTb"]'))).click()
+        EC.element_to_be_clickable((By.XPATH, '//div[@class="sc-fKTysn csNSLp"]'))).click()
 
     browser.find_element_by_xpath('//input[@name="name"]').send_keys(nome_cartao)
     browser.find_element_by_xpath('//input[@name="number"]').send_keys(nro_cartao)
@@ -104,8 +101,9 @@ def realizar_pagamento(browser, nome_cartao, nro_cartao, dt_venc, cvv, cpf):
     browser.find_element_by_xpath('//input[@name="cpf"]').send_keys(cpf)
 
     browser.execute_script("window.scrollTo(0, 960)")
-    browser.find_element_by_xpath('//label[@class="sc-LvPXS kjLjHl"]').click()
-    browser.find_element(By.CSS_SELECTOR, 'button.sc-gefPzt.gTuttx').click()
+    browser.find_element_by_xpath('//label[@class="sc-jDOurc bmmCB"]').click()
+    browser.find_element_by_xpath('//button[@class="sc-dGIKmk izpMZI"]').click()
+    # browser.find_element(By.CSS_SELECTOR, 'button.sc-dGIKmk izpMZI').click()
 
 
 def recuperar_massa_dados():
